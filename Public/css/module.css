@@ -1,0 +1,70 @@
+/* Claude Assistant: editor button, request panel, bar under the toolbar after a draft.
+   Neutral colors that fit FreeScout's standard interface and the Refresh interface alike. */
+
+/* sparkle icon, drawn in the text color */
+.ca-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: -2px;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4z'/%3E%3Cpath d='M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4z'/%3E%3Cpath d='M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* toolbar button: icon + "Claude", so that it isn't a mystery icon */
+.ca-btn { display: inline-flex; align-items: center; gap: 5px; font-weight: 600; }
+.ca-btn .ca-icon { color: #c2410c; }
+
+.ca-panel {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e3e8ef;
+    background: #fbfbfd;
+}
+.ca-panel .ca-instruction { resize: vertical; font-size: 13px; }
+.ca-actions { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+.ca-actions .btn { border-radius: 5px; }
+.ca-hint { margin-left: auto; color: #94a3b8; font-size: 12px; }
+.ca-spinner {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, .4);
+    border-top-color: #fff;
+    border-radius: 50%;
+    vertical-align: -2px;
+    animation: ca-spin .8s linear infinite;
+}
+@keyframes ca-spin { to { transform: rotate(360deg); } }
+
+.ca-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    padding: 6px 12px;
+    border-bottom: 1px solid #fde6c8;
+    background: #fff7ed;
+    color: #7c2d12;
+    font-size: 13px;
+}
+.ca-bar .ca-icon { color: #c2410c; }
+.ca-bar button {
+    padding: 2px 8px;
+    border: 1px solid #fed7aa;
+    border-radius: 5px;
+    background: #fff;
+    color: #7c2d12;
+    font-size: 12px;
+    line-height: 20px;
+}
+.ca-bar button:hover { background: #ffedd5; }
+.ca-bar .ca-undo { margin-left: auto; }
+.ca-bar .ca-bar-x { border: 0; background: transparent; font-size: 16px; line-height: 1; }
+.ca-thanks { color: #9a3412; font-style: italic; }
+
+/* Refresh interface: the button lives in its bar under the text (see module.js), not in the formatting toolbar */
+.note-editor.ca-in-tools .note-claude { display: none !important; }
+.ca-tools-btn { width: auto !important; padding: 0 8px !important; }
+.ca-in-tools .ca-panel, .ca-in-tools .ca-bar { border-top: 1px solid #e3e8ef; }
+.ca-tools-btn { margin-right: 6px; }

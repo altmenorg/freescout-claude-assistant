@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="20" fill="#c2410c"/>
+  <g transform="translate(78 44)" fill="#fff">
+    <path d="M44 4l9.5 28.5L82 42l-28.5 9.5L44 80l-9.5-28.5L6 42l28.5-9.5z"/>
+    <path d="M80 62l4 9.5 9.5 4-9.5 4-4 9.5-4-9.5-9.5-4 9.5-4z"/>
+  </g>
+  <text x="128" y="212" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="26" font-weight="600" fill="#fff">Claude Assistant</text>
+</svg>

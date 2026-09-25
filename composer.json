@@ -1,0 +1,14 @@
+{
+    "name": "altmenorg/freescout-claude-assistant",
+    "description": "Claude Assistant for FreeScout: draft and improve replies with Claude",
+    "license": "AGPL-3.0-only",
+    "extra": {
+        "laravel": {
+            "providers": ["Modules\\ClaudeAssistant\\Providers\\ClaudeAssistantServiceProvider"],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": { "Modules\\ClaudeAssistant\\": "" }
+    }
+}
