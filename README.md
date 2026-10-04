@@ -44,10 +44,12 @@ phone).
 
 ## Installation
 
-1. Download the latest release and unzip it into FreeScout's `Modules` folder: you get `Modules/ClaudeAssistant`
+1. Download [`ClaudeAssistant.zip`](https://github.com/altmenorg/freescout-claude-assistant/releases/latest/download/ClaudeAssistant.zip) from the latest release and unzip it into the `Modules` folder of FreeScout: you get `Modules/ClaudeAssistant`
    (the folder **must** have this name).
 2. **Manage › Modules**: activate **Claude Assistant** (this creates its statistics table).
 3. **Manage › Settings › Claude Assistant**: paste the API key, write your instructions, save.
+
+**Updates:** from version 1.0.1, FreeScout tells you in **Manage › Modules** when a new version is out, and the **Update** button installs it in one click. From an older version, update once by hand as above.
 
 ## Settings
 
